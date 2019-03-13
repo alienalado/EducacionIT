@@ -16,7 +16,7 @@ pregunta ()
     echo "Desea continuar? Y/N"
     echo ""
     read respuesta
-    echo $respuesta | grep Y && APROBADO || NEGADO ; exit 0
+    echo $respuesta | grep Y && echo "Elegiste Y" || echo "Elegiste Negado" ; exit 0
 }
 
 # PROCESOS:
