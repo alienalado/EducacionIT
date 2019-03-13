@@ -11,7 +11,7 @@ echo "Bienvenido al ejemplo loco de GIT HUB:"
 echo ""
 echo ""
 
-pregunta ()
+Pregunta ()
 {
     echo "Desea continuar? Y/N"
     echo ""
