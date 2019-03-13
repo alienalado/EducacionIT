@@ -1,37 +1,24 @@
 #!/bin/bash
 
-
 # BIENVENIDA
+echo ""
+echo ""
 echo "***********"
-echo "Hola World!"
+echo "Hola Crazy World!"
 echo "***********"
 echo ""
-echo "Bienvenido al ejemplo de GIT HUB"
+echo "Bienvenido al ejemplo loco de GIT HUB:"
+echo ""
 echo ""
 
-Pregunta()
+pregunta ()
 {
     echo "Desea continuar? Y/N"
+    echo ""
     read respuesta
-
-    if [[ "$respuesta" = "Y" ]];
-    then
-        echo "Usted ha elegido la opcion Y"
-    else
-        echo "Usted ha tomado el camino equivocado"
-        exit 0
-    fi
+    echo $respuesta | grep Y && APROBADO || NEGADO ; exit 0
 }
 
-# VARIABLES:
-
-# INPUT:
-
 # PROCESOS:
-
     # Elegir camino:
     Pregunta
-
-
-# OUTPUT
-
